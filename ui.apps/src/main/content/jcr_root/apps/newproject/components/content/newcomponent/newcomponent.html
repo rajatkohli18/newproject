@@ -1,0 +1,27 @@
+<!--  <h1>Author Component</h1>
+<div data-sly-use.model="newproject.core.models.AuthorImple"></div>
+<section data-sly-include="<section data-sly-include="/apps/demoproject/components/content/author/author.html"></section>"></section>
+<div data-sly-repeat="${currentPage.listChildren}">${model.name}</div>
+
+<div>Name: ${model.name}</div>
+<div>Gender: ${model.gender}</div>
+
+
+<dl data-sly-list="${currentPage.listChildren}">
+    <dt>index: ${model.name}</dt>
+    <dd>value: ${model.books}</dd>
+</dl>
+<template data-sly-template.model>Rajat</template>
+<div data-sly-call="${model}"></div>  -->
+
+<template data-sly-template.two="${ @ title}"><h1>${title}</h1></template>
+<div data-sly-call="${two @ title=properties.jcr:title}"></div>
+
+
+<!--<p data-sly-test.xyz="${x || y || z}">true</p>
+<p data-sly-test="${!xyz}">false</p>
+
+
+
+<div data-sly-list.item="${model.books}">
+<p>Book:<b>${item}</b></p>-->
